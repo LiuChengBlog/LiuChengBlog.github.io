@@ -137,15 +137,15 @@
                         
                         
                         <li>
+                            <a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">人工智能与机器学习</a>
+                        </li>
+                        
+                        <li>
                             <a href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">英语学习</a>
                         </li>
                         
                         <li>
                             <a href="/categories/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/">学习杂谈</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">人工智能与机器学习</a>
                         </li>
                         
                         
@@ -242,7 +242,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&amp;emsp;&amp;emsp; npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org  </span><br><span class="line">&amp;emsp;&amp;emsp; npm config get registry  &#x2F;&#x2F;返回https:&#x2F;&#x2F;registry.npm.taobao.org，说明镜像配置成功。  </span><br><span class="line">&amp;emsp;&amp;emsp; npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 
 <h1 id="4、安装Hexo搭建Hexo博客"><a href="#4、安装Hexo搭建Hexo博客" class="headerlink" title="4、安装Hexo搭建Hexo博客"></a>4、安装Hexo搭建Hexo博客</h1><p>1）安装Hexo<br>&emsp;&emsp; 打开 git bash，输入如下命令：<br>&emsp;&emsp; $ cnpm install -g hexo-cli<br>2）搭建Hexo博客<br>&emsp;&emsp; 在电脑上新建一个专门用来存放你的博客的文件夹，如 D:\Test<br>在该文件夹下 右键-git bash here，然后输入：<br>&emsp;&emsp;&emsp;&emsp; hexo init<br>&emsp;&emsp;&emsp;&emsp; hexo server<br>&emsp;&emsp; 完成之后，浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，即可看到hexo博客页面<br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-03.png" alt="ZT-01-03.png">   </p>
-<h1 id="5、Github上创建网站代码仓库"><a href="#5、Github上创建网站代码仓库" class="headerlink" title="5、Github上创建网站代码仓库"></a>5、Github上创建网站代码仓库</h1><p>1）创建仓库<br>&emsp;&emsp; 在GitHub上创建以你的GitHub用户名（注意不是昵称）命名的项目，例如我的GitHub用户名为 LiuChengBlog 那么我就创建一个名字为：LiuChengBlog.github.io 的项目。<br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-04.png" alt="ZT-01-04.png"><br>2）创建SSH连接<br>&emsp;&emsp; 打开Github的设置界面，依次点击<strong>SSH and GPG keys</strong>和<strong>New SSH Key</strong><br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-05.png" alt="ZT-01-05.png"><br>&emsp;&emsp; 然后用记事本打开如图路径下的 id_rsa.pub 文件<br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-06.png" alt="ZT-01-06.png"><br>&emsp;&emsp; 将记事本中的全部内容复制到刚刚打开的SSH Keys的界面中，再点<strong>Add SSH key</strong><br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-07.png" alt="ZT-01-07.png"><br>3）复制仓库地址<br>&emsp;&emsp; 创建好仓库后点开仓库，复制如图中的仓库地址<br>&emsp;&emsp;&emsp;&emsp; <img src="./imgs/sources/ZT-01-08.png" alt="ZT-01-08.png"></p>
+<h1 id="5、Github上创建网站代码仓库"><a href="#5、Github上创建网站代码仓库" class="headerlink" title="5、Github上创建网站代码仓库"></a>5、Github上创建网站代码仓库</h1><p>1）创建仓库<br>&emsp;&emsp; 在GitHub上创建以你的GitHub用户名（注意不是昵称）命名的项目，例如我的GitHub用户名为 LiuChengBlog 那么我就创建一个名字为：LiuChengBlog.github.io 的项目。<br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-04.png" alt="ZT-01-04.png"><br>2）创建SSH连接<br>&emsp;&emsp; 打开Github的设置界面，依次点击<strong>SSH and GPG keys</strong>和<strong>New SSH Key</strong><br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-05.png" alt="ZT-01-05.png"><br>&emsp;&emsp; 然后用记事本打开如图路径下的 id_rsa.pub 文件<br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-06.png" alt="ZT-01-06.png"><br>&emsp;&emsp; 将记事本中的全部内容复制到刚刚打开的SSH Keys的界面中，再点<strong>Add SSH key</strong><br>&emsp;&emsp;&emsp;&emsp; <img src="sources/ZT-01-07.png" alt="ZT-01-07.png"><br>3）复制仓库地址<br>&emsp;&emsp; 创建好仓库后点开仓库，复制如图中的仓库地址<br>&emsp;&emsp;&emsp;&emsp; <img src="../../imgs/sources/ZT-01-08.png" alt="ZT-01-08.png"></p>
 <h1 id="6、配置Hexo"><a href="#6、配置Hexo" class="headerlink" title="6、配置Hexo"></a>6、配置Hexo</h1><p>&emsp;&emsp; 打开刚才新建的Test文件夹，用记事本打开_config.yml配置文件，找到deploy，进行如下配置，完成保存。注意格式不能错。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git  </span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;qiuyeyijian&#x2F;  qiuyeyijian.github.io.git   &#x2F;&#x2F;将地址换成自己的  </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp; 然后在Test文件夹下打开Git Bash，输入如下命令：</p>
@@ -361,13 +361,13 @@ hexo d  //（将本地静态文件推送至Github）</code></pre>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/14/2%E3%80%81YY-01/">开言英语：“开心” 的表达方法</a>
+                    <a href="/2020/01/15/1%E3%80%81ZN-02/">ZN-02</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/14/3%E3%80%81ZT-01/">网站搭建过程</a>
+                    <a href="/2020/01/11/1%E3%80%81ZN-01/">人工智能学习目录</a>
                 </span>
             </li>
             
@@ -379,13 +379,13 @@ hexo d  //（将本地静态文件推送至Github）</code></pre>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/15/1%E3%80%81ZN-02/">ZN-02</a>
+                    <a href="/2020/01/14/2%E3%80%81YY-01/">开言英语：“开心” 的表达方法</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/11/1%E3%80%81ZN-01/">人工智能学习目录</a>
+                    <a href="/2020/01/14/3%E3%80%81ZT-01/">网站搭建过程</a>
                 </span>
             </li>
             
@@ -424,19 +424,19 @@ hexo d  //（将本地静态文件推送至Github）</code></pre>
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%BC%80%E8%A8%80%E8%8B%B1%E8%AF%AD/" style="font-size: 14.037263774057537px;" class="tag-cloud-link">开言英语</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 9.221205469887787px;" class="tag-cloud-link">学习目录</a>
     
-    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 11.003858058322004px;" class="tag-cloud-link">口语积累</a>
+    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 15.239285658674959px;" class="tag-cloud-link">人工智能</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 12.56321129911796px;" class="tag-cloud-link">学习杂谈</a>
+    <a href="/tags/%E5%BC%80%E8%A8%80%E8%8B%B1%E8%AF%AD/" style="font-size: 11.244451188757221px;" class="tag-cloud-link">开言英语</a>
     
-    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 11.065730803002605px;" class="tag-cloud-link">网站搭建</a>
+    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 16.938249704380027px;" class="tag-cloud-link">口语积累</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 19.79352338346543px;" class="tag-cloud-link">学习目录</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 10.88773883712743px;" class="tag-cloud-link">学习杂谈</a>
     
-    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 17.480015219158357px;" class="tag-cloud-link">人工智能</a>
+    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 15.772525107205384px;" class="tag-cloud-link">网站搭建</a>
     
-    <a href="/tags/Markdown/" style="font-size: 14.749604723847035px;" class="tag-cloud-link">Markdown</a>
+    <a href="/tags/Markdown/" style="font-size: 13.492807794517216px;" class="tag-cloud-link">Markdown</a>
     
 </div>
                 
