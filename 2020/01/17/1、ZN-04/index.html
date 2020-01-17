@@ -199,9 +199,9 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/Python%E5%9F%BA%E7%A1%80/">Python基础</a>, 
+                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>, 
                 
-                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+                <a href="/tags/Python%E5%9F%BA%E7%A1%80/">Python基础</a>
                 
             </span>
             
@@ -226,9 +226,9 @@
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/Python%E5%9F%BA%E7%A1%80/">Python基础</a>, 
+                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>, 
                 
-                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+                <a href="/tags/Python%E5%9F%BA%E7%A1%80/">Python基础</a>
                 
                 
                 
@@ -236,11 +236,8 @@
         </center>
     </div>
     <div class="content-article">
-        <h1 id="1、数字类型"><a href="#1、数字类型" class="headerlink" title="1、数字类型"></a>1、数字类型</h1><p>1）数字类型的组成<br>&ensp;&ensp;① 整数<br>&ensp;&ensp;&ensp;&ensp;默认十进制<br>&ensp;&ensp;&ensp;&ensp;二进制0b开头，八进制0o开头，十六进制0x开头<br>&ensp;&ensp;&ensp;&ensp;十进制与其他进制的转换，输出结果为字符串类型<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>a=bin(16) # 转二进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>b=oct(16) # 转十进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>c=hex(16) # 转十六进制</code><br>&ensp;&ensp;&ensp;&ensp;其他进制与十进制的转换，输出结果为整型<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>d=int(a,2) # 二进制转十进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>e=int(b,8) # 八进制转十进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>f=int(c,16) # 十六进制转十进制</code><br>&ensp;&ensp;② 浮点数<br>&ensp;&ensp;&ensp;&ensp;不确定小数问题<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>(0.1+0.2)==0.3</code>的结果是false<br>&ensp;&ensp;&ensp;&ensp;引起该问题的原因是因为部分小数不能用二进制完全表示<br>&ensp;&ensp;③ 复数<br>&ensp;&ensp;&ensp;&ensp;a+bj的形式<br>&ensp;&ensp;&ensp;&ensp;当b=1时，这个1要显式写出<br>2）数字运算操作符<br>&ensp;&ensp;加减乘除 + - * /： <code>(1+3-4*2)/5</code><br>&ensp;&ensp;取反 -：<code>x= -x</code><br>&ensp;&ensp;乘方 <strong>：`2</strong>3 # 代表2的3次方<code>&amp;ensp;&amp;ensp;整数商 //：</code>13//5 # 向下取整数<code>&amp;ensp;&amp;ensp;模运算 %：</code>13%5 # 取余数<code>&amp;ensp;&amp;ensp;**整数与浮点数运算结果都是浮点**
-&amp;ensp;&amp;ensp;**除法运算结果都是浮点数**
-3）数字运算操作函数
-&amp;ensp;&amp;ensp;① 求绝对值 abs()：</code>a = abs(-5)<code>&amp;ensp;&amp;ensp;② 求幂次方 pow(x,n)：</code>a = pow(2,5) # 求2的5次方<code>&amp;ensp;&amp;ensp;③ 四舍五入 round(x,n)：</code>a = round(a,2) # a四舍五入保留2位小数<code>&amp;ensp;&amp;ensp;④ 商和模运算 divmod(x,y)：</code>divmod(13,5) # 相当于 (x//y,x%y)，更快一点`<br>&ensp;&ensp;⑤ 最大/最小值 max() min()<br>&ensp;&ensp;⑥ 求和 sum(<strong>列表或元组</strong>) </p>
-<h1 id="2、字符串类型"><a href="#2、字符串类型" class="headerlink" title="2、字符串类型"></a>2、字符串类型</h1><p>1）字符串的表达：字符串中要用到引号，可以在前面加上转义符 \<br>2）字符串的性质<br>&ensp;&ensp;① 字符串的索引：可以通过下标获取字符串中的字符<br>&ensp;&ensp;&ensp;&ensp;正向索引：<code>print(s[0])</code><br>&ensp;&ensp;&ensp;&ensp;反向索引：<code>print(s[-1]) # 倒数第一个字符</code><br>&ensp;&ensp;② 字符串的切片：变量名[开始位置:结束位置:切片间隔]<br>&ensp;&ensp;&ensp;&ensp;<code>s = &#39;Python&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(s[0:3:1]) # 结果是Pyt，切片是左闭右开</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(s[:5:2]) # 结果是Pto，起始位置是0的话就可以省略</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(s[1:]) # 结果是ython，起始位置是最后的话也可以省略</code><br>3）字符串操作符<br>&ensp;&ensp;① 拼接 +：将两个字符串进行拼接<br>&ensp;&ensp;&ensp;&ensp;<code>a=&#39;I love &#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;you&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(a+b) # 结果是I love you</code><br>&ensp;&ensp;② 成倍复制 <em>：复制字符串<br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;you&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(b*3) # 结果是youyouyou</code><br>&ensp;&ensp;③ 成员运算 in：判断是否是子集<br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;Peter, Paul and Mary&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>&#39;Peter&#39; in b # 结果是True</code><br>&ensp;&ensp;④ 遍历 in：遍历字符串字符<br>&ensp;&ensp;&ensp;&ensp;<code>for i in &#39;Python&#39;:</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<code>print(i)</code><br>4）字符串处理函数<br>&ensp;&ensp;① 字符串长度：len(字符串)<br>&ensp;&ensp;② 字符编码：python使用的是Unicode编码<br>5）字符串处理方法<br>&ensp;&ensp;① 分割：字符串.split(分割字符)<br>&ensp;&ensp;&ensp;&ensp;<code>a=&#39;I love you&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(a.split(&#39; &#39;))</code><br>&ensp;&ensp;&ensp;&ensp;<code># 结果返回的是列表：[&#39;I&#39;, &#39;love&#39;,&#39;you&#39;]</code><br>&ensp;&ensp;&ensp;&ensp;<code># 原字符串没有改变</code><br>&ensp;&ensp;② 聚合：聚合字符.join(可迭代数据类型)<br>&ensp;&ensp;&ensp;&ensp;<code>a=&#39;12345&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;]</code><br>&ensp;&ensp;&ensp;&ensp;<code>a_join= &quot;.&quot;.join(a)</code><br>&ensp;&ensp;&ensp;&ensp;`b_join= “</em>“.join(b)<code>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;</code>print(a_join)<code>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;</code>print(b_join)<code>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;</code># 结果：’1.2.3.4.5’<code>&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;</code># 结果：’1<em>2</em>3<em>4</em>5’`<br>&ensp;&ensp;③ 删除两端特定字符：字符串.strip(删除字符)<br>&ensp;&ensp;④ 字符串替换：字符串.replace(“被替换”,”替换成”)<br>&ensp;&ensp;⑤ 字符串替换：字符串.replace(“被替换”,”替换成”)<br>&ensp;&ensp;⑥ 字符串统计：字符串.count(“要统计的字符串”)<br>&ensp;&ensp;⑦ 字母大小写和首字母大写：字符串.upper()、字符串.lower()、字符串.title()</p>
+        <h1 id="1、数字类型"><a href="#1、数字类型" class="headerlink" title="1、数字类型"></a>1、数字类型</h1><p>1）数字类型的组成<br>&ensp;&ensp;① 整数<br>&ensp;&ensp;&ensp;&ensp;默认十进制<br>&ensp;&ensp;&ensp;&ensp;二进制0b开头，八进制0o开头，十六进制0x开头<br>&ensp;&ensp;&ensp;&ensp;十进制与其他进制的转换，输出结果为字符串类型<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>a=bin(16) # 转二进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>b=oct(16) # 转十进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>c=hex(16) # 转十六进制</code><br>&ensp;&ensp;&ensp;&ensp;其他进制与十进制的转换，输出结果为整型<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>d=int(a,2) # 二进制转十进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>e=int(b,8) # 八进制转十进制</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>f=int(c,16) # 十六进制转十进制</code><br>&ensp;&ensp;② 浮点数<br>&ensp;&ensp;&ensp;&ensp;不确定小数问题<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <code>(0.1+0.2)==0.3</code>的结果是false<br>&ensp;&ensp;&ensp;&ensp;引起该问题的原因是因为部分小数不能用二进制完全表示<br>&ensp;&ensp;③ 复数<br>&ensp;&ensp;&ensp;&ensp;a+bj的形式<br>&ensp;&ensp;&ensp;&ensp;当b=1时，这个1要显式写出<br>2）数字运算操作符<br>&ensp;&ensp;加减乘除 + - * /： <code>(1+3-4*2)/5</code><br>&ensp;&ensp;取反 -：<code>x= -x</code><br>&ensp;&ensp;乘方：<code>2**3 # 代表2的3次方</code><br>&ensp;&ensp;整数商 //：<code>13//5 # 向下取整数</code><br>&ensp;&ensp;模运算 %：<code>13%5 # 取余数</code><br>&ensp;&ensp;<strong>整数与浮点数运算结果都是浮点</strong><br>&ensp;&ensp;<strong>除法运算结果都是浮点数</strong><br>3）数字运算操作函数<br>&ensp;&ensp;① 求绝对值 abs()：<code>a = abs(-5)</code><br>&ensp;&ensp;② 求幂次方 pow(x,n)：<code>a = pow(2,5) # 求2的5次方</code><br>&ensp;&ensp;③ 四舍五入 round(x,n)：<code>a = round(a,2) # a四舍五入保留2位小数</code><br>&ensp;&ensp;④ 商和模运算 divmod(x,y)：<code>divmod(13,5) # 相当于 (x//y,x%y)，更快一点</code><br>&ensp;&ensp;⑤ 最大/最小值 max() min()<br>&ensp;&ensp;⑥ 求和 sum(<strong>列表或元组</strong>) </p>
+<h1 id="2、字符串类型"><a href="#2、字符串类型" class="headerlink" title="2、字符串类型"></a>2、字符串类型</h1><p>1）字符串的表达：字符串中要用到引号，可以在前面加上转义符 \<br>2）字符串的性质<br>&ensp;&ensp;① 字符串的索引：可以通过下标获取字符串中的字符<br>&ensp;&ensp;&ensp;&ensp;正向索引：<code>print(s[0])</code><br>&ensp;&ensp;&ensp;&ensp;反向索引：<code>print(s[-1]) # 倒数第一个字符</code><br>&ensp;&ensp;② 字符串的切片：变量名[开始位置:结束位置:切片间隔]<br>&ensp;&ensp;&ensp;&ensp;<code>s = &#39;Python&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(s[0:3:1]) # 结果是Pyt，切片是左闭右开</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(s[:5:2]) # 结果是Pto，起始位置是0的话就可以省略</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(s[1:]) # 结果是ython，起始位置是最后的话也可以省略</code><br>3）字符串操作符<br>&ensp;&ensp;① 拼接 +：将两个字符串进行拼接<br>&ensp;&ensp;&ensp;&ensp;<code>a=&#39;I love &#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;you&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(a+b) # 结果是I love you</code><br>&ensp;&ensp;② 用乘号成倍复制：复制字符串<br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;you&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(b*3) # 结果是youyouyou</code><br>&ensp;&ensp;③ 成员运算 in：判断是否是子集<br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;Peter, Paul and Mary&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>&#39;Peter&#39; in b # 结果是True</code><br>&ensp;&ensp;④ 遍历 in：遍历字符串字符<br>&ensp;&ensp;&ensp;&ensp;<code>for i in &#39;Python&#39;:</code><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<code>print(i)</code><br>4）字符串处理函数<br>&ensp;&ensp;① 字符串长度：len(字符串)<br>&ensp;&ensp;② 字符编码：python使用的是Unicode编码<br>5）字符串处理方法<br>&ensp;&ensp;① 分割：字符串.split(分割字符)<br>&ensp;&ensp;&ensp;&ensp;<code>a=&#39;I love you&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(a.split(&#39; &#39;))</code><br>&ensp;&ensp;&ensp;&ensp;<code># 结果返回的是列表：[&#39;I&#39;, &#39;love&#39;,&#39;you&#39;]</code><br>&ensp;&ensp;&ensp;&ensp;<code># 原字符串没有改变</code><br>&ensp;&ensp;② 聚合：聚合字符.join(可迭代数据类型)<br>&ensp;&ensp;&ensp;&ensp;<code>a=&#39;12345&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code>b=&#39;[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;]</code><br>&ensp;&ensp;&ensp;&ensp;<code>a_join= &quot;.&quot;.join(a)</code><br>&ensp;&ensp;&ensp;&ensp;<code>b_join= &quot;*&quot;.join(b)</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(a_join)</code><br>&ensp;&ensp;&ensp;&ensp;<code>print(b_join)</code><br>&ensp;&ensp;&ensp;&ensp;<code># 结果：&#39;1.2.3.4.5&#39;</code><br>&ensp;&ensp;&ensp;&ensp;<code># 结果：&#39;1*2*3*4*5&#39;</code><br>&ensp;&ensp;③ 删除两端特定字符：字符串.strip(删除字符)<br>&ensp;&ensp;④ 字符串替换：字符串.replace(“被替换”,”替换成”)<br>&ensp;&ensp;⑤ 字符串替换：字符串.replace(“被替换”,”替换成”)<br>&ensp;&ensp;⑥ 字符串统计：字符串.count(“要统计的字符串”)<br>&ensp;&ensp;⑦ 字母大小写和首字母大写：字符串.upper()、字符串.lower()、字符串.title()</p>
 <h1 id="3、布尔类型"><a href="#3、布尔类型" class="headerlink" title="3、布尔类型"></a>3、布尔类型</h1><p>1）逻辑运算的结果</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span></span><br><span class="line">print(a &gt; <span class="number">8</span>)  <span class="comment"># True</span></span><br><span class="line">print(a == <span class="number">12</span>)  <span class="comment"># False</span></span><br><span class="line">print(a &lt; <span class="number">5</span>)  <span class="comment"># False</span></span><br><span class="line">print(any([<span class="literal">False</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="literal">None</span>]))  <span class="comment"># True，any判断是否有True的</span></span><br><span class="line">print(all([<span class="literal">False</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="literal">None</span>]))  <span class="comment"># False，all判断是否都是True的</span></span><br></pre></td></tr></table></figure>
 <p>2）指示条件</p>
@@ -434,23 +431,23 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/Python%E5%9F%BA%E7%A1%80/" style="font-size: 9.532766802807544px;" class="tag-cloud-link">Python基础</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 13.782363839374586px;" class="tag-cloud-link">学习目录</a>
     
-    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 9.167585792153861px;" class="tag-cloud-link">人工智能</a>
+    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 19.021928895638748px;" class="tag-cloud-link">人工智能</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 16.878944461507178px;" class="tag-cloud-link">学习目录</a>
+    <a href="/tags/Python%E5%9F%BA%E7%A1%80/" style="font-size: 15.800598760267286px;" class="tag-cloud-link">Python基础</a>
     
-    <a href="/tags/%E5%BC%80%E8%A8%80%E8%8B%B1%E8%AF%AD/" style="font-size: 11.453916168718234px;" class="tag-cloud-link">开言英语</a>
+    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" style="font-size: 9.580696099347186px;" class="tag-cloud-link">数学基础</a>
     
-    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 9.643853110066056px;" class="tag-cloud-link">口语积累</a>
+    <a href="/tags/%E5%BC%80%E8%A8%80%E8%8B%B1%E8%AF%AD/" style="font-size: 17.294892017341937px;" class="tag-cloud-link">开言英语</a>
     
-    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" style="font-size: 12.435211748604207px;" class="tag-cloud-link">数学基础</a>
+    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 12.857232685842451px;" class="tag-cloud-link">口语积累</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 11.86011242407921px;" class="tag-cloud-link">学习杂谈</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 12.107037906704242px;" class="tag-cloud-link">学习杂谈</a>
     
-    <a href="/tags/Markdown/" style="font-size: 12.594242531714203px;" class="tag-cloud-link">Markdown</a>
+    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 13.796866391391791px;" class="tag-cloud-link">网站搭建</a>
     
-    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 14.763114211774969px;" class="tag-cloud-link">网站搭建</a>
+    <a href="/tags/Markdown/" style="font-size: 16.144285852850068px;" class="tag-cloud-link">Markdown</a>
     
 </div>
                 
