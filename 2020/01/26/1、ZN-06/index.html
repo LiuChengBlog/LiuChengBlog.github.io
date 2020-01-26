@@ -10,7 +10,7 @@
     
     
     
-    <title>tags: 平台搭建 | LiuChengBlog</title>
+    <title>Python基础④：程序控制结构 | LiuChengBlog</title>
     <link rel="icon" type="image/x-icon" href="">
 
     
@@ -141,11 +141,11 @@
                         </li>
                         
                         <li>
-                            <a href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">英语学习</a>
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/">学习杂谈</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/">学习杂谈</a>
+                            <a href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/">英语学习</a>
                         </li>
                         
                         
@@ -179,19 +179,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://liuchengblog.github.io">LiuChengBlog</a>
         >
-        <span>标签</span>
+        <span>Python基础④：程序控制结构</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/index.html">平台搭建</a>
+                <a href="/2020/01/26/1%E3%80%81ZN-06/">Python基础④：程序控制结构</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/">学习目录</a>, 
+                
+                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-01-26
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -199,21 +216,56 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/index.html">平台搭建</a>
+                    <a href="/2020/01/26/1%E3%80%81ZN-06/">Python基础④：程序控制结构</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-01-26
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/">学习目录</a>, 
+                
+                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2020/01/18/3%E3%80%81ZT-03/">Anaconda搭建人工智能与深度学习平台</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <h2 id="1、分支结构–if语句"><a href="#1、分支结构–if语句" class="headerlink" title="1、分支结构–if语句"></a>1、分支结构–if语句</h2><p>1）分支语句模板</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> 条件:<br>	代码块<br><span class="hljs-keyword">elif</span> 条件:<br>	代码块<br>...<br><span class="hljs-keyword">else</span>:<br>	代码块<br></code></pre></td></tr></table></figure>
+<p>2）分支语句例子</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">age = 18<br>res = 0  # 变量初始化<br>if age &gt;22:<br>	print('可以结婚了’）<br>elif age&gt;30:<br>	print('赶紧结婚')<br>else:<br>	print('再等等吧')<br></code></pre></td></tr></table></figure>
+<p>3）嵌套语句：if语句中有if</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">age = eval(input(<span class="hljs-string">"请输入年龄"</span>))<br><span class="hljs-keyword">if</span> age &gt; <span class="hljs-number">18</span>:<br>	is_public_place = bool(eval(input(<span class="hljs-string">"公共场合输入1，非公共场合输入0"</span>)))<br>	<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> is_public_place:<br>		print(<span class="hljs-string">"可以抽烟"</span>)<br>	<span class="hljs-keyword">else</span>:<br>		print(<span class="hljs-string">"禁止抽烟"</span>)<br><span class="hljs-keyword">else</span>:<br>	print(<span class="hljs-string">"禁止抽烟"</span>)<br></code></pre></td></tr></table></figure>
+
+<h2 id="2、遍历循环–for循环"><a href="#2、遍历循环–for循环" class="headerlink" title="2、遍历循环–for循环"></a>2、遍历循环–for循环</h2><p>1）for循环模板</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> 元素 <span class="hljs-keyword">in</span> 可迭代对象: <span class="hljs-comment"># 可迭代对象包括列表/元组/字符串/字典</span><br>	执行语句<br></code></pre></td></tr></table></figure>
+<p>2）for循环例子<br>&ensp;&ensp;① 直接迭代</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">graduates = (<span class="hljs-string">"lilei"</span>,<span class="hljs-string">"hanmeimei"</span>,<span class="hljs-string">"Jim"</span>)<br><span class="hljs-keyword">for</span> graduate <span class="hljs-keyword">in</span> graduates:<br>	print(<span class="hljs-string">"Congratulations, "</span> + graduate)<br></code></pre></td></tr></table></figure>
+<p>&ensp;&ensp;② 变换迭代</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python">students = &#123;<span class="hljs-number">201901</span>:<span class="hljs-string">'小明'</span>,<span class="hljs-number">201902</span>:<span class="hljs-string">'小红'</span>,<span class="hljs-number">201903</span>:<span class="hljs-string">'小强'</span>&#125;<br><span class="hljs-keyword">for</span> k,v <span class="hljs-keyword">in</span> students.items():<br>	print(k,v)<br><span class="hljs-comment"># 201901 小明</span><br><span class="hljs-comment"># 201902 小红</span><br><span class="hljs-comment"># 201903 小强</span><br><span class="hljs-keyword">for</span> student <span class="hljs-keyword">in</span> students:<br>	print(student)<br><span class="hljs-comment"># 201901</span><br><span class="hljs-comment"># 201902</span><br><span class="hljs-comment"># 201903</span><br></code></pre></td></tr></table></figure>
+<p>&ensp;&ensp;③ range()对象</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">res = []<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>): <span class="hljs-comment"># 左闭右开，每个+2，1/3/5/7/9</span><br>	res.append(i**<span class="hljs-number">2</span>)<br>print(res) <span class="hljs-comment"># [1,9,25,49,81]</span><br></code></pre></td></tr></table></figure>
+<p>3）break和continue<br>&ensp;&ensp;① break用于结束整个循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">product_scores = [<span class="hljs-number">89</span>,<span class="hljs-number">90</span>,<span class="hljs-number">99</span>,<span class="hljs-number">70</span>,<span class="hljs-number">67</span>,<span class="hljs-number">78</span>,<span class="hljs-number">85</span>,<span class="hljs-number">92</span>,<span class="hljs-number">77</span>,<span class="hljs-number">82</span>]<br>i = <span class="hljs-number">0</span><br><span class="hljs-keyword">for</span> score <span class="hljs-keyword">in</span> product_scores:<br>	<span class="hljs-comment"># 如果低于75的个数超过1个，则不合格</span><br>	<span class="hljs-keyword">if</span> score &lt; <span class="hljs-number">75</span>:<br>		i += <span class="hljs-number">1</span><br>	<span class="hljs-keyword">if</span> i == <span class="hljs-number">2</span>:<br>		print(<span class="hljs-string">"产品不合格"</span>)<br>		<span class="hljs-keyword">break</span>  <span class="hljs-comment"># 结束了整个循环，67后面的元素就遍历不到了</span><br></code></pre></td></tr></table></figure>
+<p>&ensp;&ensp;② continue用于结束本次循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">product_scores = [<span class="hljs-number">89</span>,<span class="hljs-number">90</span>,<span class="hljs-number">99</span>,<span class="hljs-number">70</span>,<span class="hljs-number">67</span>,<span class="hljs-number">78</span>,<span class="hljs-number">85</span>,<span class="hljs-number">92</span>,<span class="hljs-number">77</span>,<span class="hljs-number">82</span>]<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(product_scores)):<br>	<span class="hljs-comment"># 如果低于75，输出警告</span><br>	<span class="hljs-keyword">if</span> product_scores[i]&gt;=<span class="hljs-number">75</span>:<br>		<span class="hljs-keyword">continue</span><br>	print(<span class="hljs-string">"第&#123;0&#125;个产品，分数为&#123;1&#125;,不合格"</span>.format(i,product_scores[i]))<br></code></pre></td></tr></table></figure>
+<p>4）for与else的配合</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python">product_scores = [<span class="hljs-number">89</span>,<span class="hljs-number">90</span>,<span class="hljs-number">99</span>,<span class="hljs-number">70</span>,<span class="hljs-number">67</span>,<span class="hljs-number">78</span>,<span class="hljs-number">85</span>,<span class="hljs-number">92</span>,<span class="hljs-number">77</span>,<span class="hljs-number">82</span>]<br>i = <span class="hljs-number">0</span><br><span class="hljs-keyword">for</span> score <span class="hljs-keyword">in</span> product_scores:<br>	<span class="hljs-keyword">if</span> score &lt; <span class="hljs-number">75</span>:<br>		i += <span class="hljs-number">1</span><br>	<span class="hljs-keyword">if</span> i == <span class="hljs-number">2</span>:<br>		print(<span class="hljs-string">"产品不合格"</span>)<br>		<span class="hljs-keyword">break</span><br><span class="hljs-keyword">else</span>:  <span class="hljs-comment"># for遍历完之后，如果没有break，则运行else</span><br>	print(<span class="hljs-string">"产品合格"</span>)<br></code></pre></td></tr></table></figure>
+
+<h2 id="3、无限循环–while循环"><a href="#3、无限循环–while循环" class="headerlink" title="3、无限循环–while循环"></a>3、无限循环–while循环</h2><p>1）while的一般格式</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 判断条件:<br>	执行语句<br><span class="hljs-comment"># 条件为真，执行语句</span><br><span class="hljs-comment"># 条件为假，while循环结束</span><br></code></pre></td></tr></table></figure>
+<p>2）不用while<br>因为实际在编程中，while写的语句都可以改成for循环，这里偷点懒，之后循环都用for就好。</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -270,13 +322,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2020/01/26/1%E3%80%81ZN-06/">Python基础④：程序控制结构</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2020/01/26/1%E3%80%81ZN-05/">Python基础③：组合数据类型</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/18/3%E3%80%81ZT-03/">Anaconda搭建人工智能与深度学习平台</a>
+                    <a href="/2020/01/18/1%E3%80%81ZT-07/">Anaconda搭建人工智能与深度学习平台</a>
                 </span>
             </li>
             
@@ -346,13 +404,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2020/01/26/1%E3%80%81ZN-06/">Python基础④：程序控制结构</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2020/01/26/1%E3%80%81ZN-05/">Python基础③：组合数据类型</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/18/3%E3%80%81ZT-03/">Anaconda搭建人工智能与深度学习平台</a>
+                    <a href="/2020/01/18/1%E3%80%81ZT-07/">Anaconda搭建人工智能与深度学习平台</a>
                 </span>
             </li>
             
@@ -403,17 +467,17 @@
 
                 
                 <li>
-                    <a href="/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/01/26/1%E3%80%81ZN-06/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/01/26/1%E3%80%81ZN-06/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/01/26/1%E3%80%81ZN-06/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -421,25 +485,23 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 10.468359324173335px;" class="tag-cloud-link">学习目录</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 10.769185392285198px;" class="tag-cloud-link">学习目录</a>
     
-    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 14.564738655659163px;" class="tag-cloud-link">人工智能</a>
+    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 12.312524752973584px;" class="tag-cloud-link">人工智能</a>
     
-    <a href="/tags/Python%E5%9F%BA%E7%A1%80/" style="font-size: 14.476423179589705px;" class="tag-cloud-link">Python基础</a>
+    <a href="/tags/Python%E5%9F%BA%E7%A1%80/" style="font-size: 16.704219699418857px;" class="tag-cloud-link">Python基础</a>
     
-    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" style="font-size: 16.433716987820787px;" class="tag-cloud-link">数学基础</a>
+    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" style="font-size: 19.679286983461065px;" class="tag-cloud-link">数学基础</a>
     
-    <a href="/tags/%E5%BC%80%E8%A8%80%E8%8B%B1%E8%AF%AD/" style="font-size: 10.06423821128476px;" class="tag-cloud-link">开言英语</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 17.89457243524558px;" class="tag-cloud-link">学习杂谈</a>
     
-    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 11.60951778591305px;" class="tag-cloud-link">口语积累</a>
+    <a href="/tags/Markdown/" style="font-size: 8.899780689614914px;" class="tag-cloud-link">Markdown</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 8.839021010753708px;" class="tag-cloud-link">学习杂谈</a>
+    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 12.70924251413731px;" class="tag-cloud-link">网站搭建</a>
     
-    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 14.328467367383851px;" class="tag-cloud-link">网站搭建</a>
+    <a href="/tags/%E5%BC%80%E8%A8%80%E8%8B%B1%E8%AF%AD/" style="font-size: 12.407088542371454px;" class="tag-cloud-link">开言英语</a>
     
-    <a href="/tags/Markdown/" style="font-size: 15.824209577208768px;" class="tag-cloud-link">Markdown</a>
-    
-    <a href="/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/" style="font-size: 14.25230705585795px;" class="tag-cloud-link">平台搭建</a>
+    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 19.110814191909018px;" class="tag-cloud-link">口语积累</a>
     
 </div>
                 
