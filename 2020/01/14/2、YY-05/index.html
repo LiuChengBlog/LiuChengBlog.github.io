@@ -10,7 +10,7 @@
     
     
     
-    <title>Python基础⑤：函数 | LiuChengBlog</title>
+    <title>日常英语：Job interview | LiuChengBlog</title>
     <link rel="icon" type="image/x-icon" href="">
 
     
@@ -185,13 +185,13 @@
         <i class="fa fa-home"></i>
         <a href="https://liuchengblog.github.io">LiuChengBlog</a>
         >
-        <span>Python基础⑤：函数</span>
+        <span>日常英语：Job interview</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2020/02/01/1%E3%80%81ZN-08/">Python基础⑤：函数</a>
+                <a href="/2020/01/14/2%E3%80%81YY-05/">日常英语：Job interview</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -199,14 +199,14 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/">学习目录</a>, 
+                <a href="/tags/%E6%97%A5%E5%B8%B8%E8%8B%B1%E8%AF%AD/">日常英语</a>, 
                 
-                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+                <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/">口语积累</a>
                 
             </span>
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2020-02-01
+                <i class="fa fa-calendar"></i> 2020-01-14
             </span>
             
         </div>
@@ -216,19 +216,19 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2020/02/01/1%E3%80%81ZN-08/">Python基础⑤：函数</a>
+                    <a href="/2020/01/14/2%E3%80%81YY-05/">日常英语：Job interview</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2020-02-01
+                <i class="fa fa-calendar"></i> 2020-01-14
             </p>
             <p>
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/">学习目录</a>, 
+                <a href="/tags/%E6%97%A5%E5%B8%B8%E8%8B%B1%E8%AF%AD/">日常英语</a>, 
                 
-                <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+                <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/">口语积累</a>
                 
                 
                 
@@ -236,29 +236,13 @@
         </center>
     </div>
     <div class="content-article">
-        <h2 id="1、函数的定义与调用"><a href="#1、函数的定义与调用" class="headerlink" title="1、函数的定义与调用"></a>1、函数的定义与调用</h2><p>1）函数的定义与调用：参数+函数体+返回值<br>&ensp;&ensp;① 定义</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 定义函数格式</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> 函数名<span class="hljs-params">(参数)</span>:</span><br>	函数体<br>	<span class="hljs-keyword">return</span> 返回值<br><span class="hljs-comment"># 例子：求正方形面积</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area_of_square</span><span class="hljs-params">(length_of_side)</span>:</span><br>	square_area = pow(legth_of_side,<span class="hljs-number">2</span>)<br>	<span class="hljs-keyword">return</span> square_area<br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;② 调用</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 例子：求正方形面积</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">area_of_square</span><span class="hljs-params">(length_of_side)</span>:</span><br>	square_area = pow(legth_of_side,<span class="hljs-number">2</span>)<br>	<span class="hljs-keyword">return</span> square_area<br><span class="hljs-comment"># 调用定义的函数</span><br>area = area_of_square(<span class="hljs-number">5</span>)<br></code></pre></td></tr></table></figure>
-<p>2）参数的传递<br>&ensp;&ensp;① 位置参数：按照位置顺序用实参对形参赋值，实参形参个数一一对应</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function</span><span class="hljs-params">(x,y,z)</span>:</span><br>	<span class="hljs-keyword">return</span> x,y,z<br>function(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>) <span class="hljs-comment"># x=1,y=2,z=3</span><br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;② 关键字参数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function</span><span class="hljs-params">(x,y,z)</span>:</span><br>	<span class="hljs-keyword">return</span> x,y,z<br>function(y=<span class="hljs-number">1</span>,z=<span class="hljs-number">2</span>,x=<span class="hljs-number">3</span>) <span class="hljs-comment"># x=3,y=1,z=2</span><br><span class="hljs-comment"># 两个可以混着用，但位置参数必须要在关键字参数前面</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function</span><span class="hljs-params">(x,y,z)</span>:</span><br>	<span class="hljs-keyword">return</span> x,y,z<br>function(<span class="hljs-number">1</span>,z=<span class="hljs-number">2</span>,y=<span class="hljs-number">3</span>) <span class="hljs-comment"># x=1,y=3,z=2</span><br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;③  默认参数：在定义函数阶段就给形参赋值</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 默认参数应该设置为不可变类型（数字、字符串、元组）</span><br><span class="hljs-comment"># 将z设为默认参数，值为3</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function</span><span class="hljs-params">(x,y,z=<span class="hljs-number">3</span>)</span>:</span><br>	<span class="hljs-keyword">return</span> x,y,z<br>function(y=<span class="hljs-number">1</span>,x=<span class="hljs-number">3</span>) <span class="hljs-comment"># x=3,y=1,z=3</span><br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;④  可选参数：让参数变成可选的</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">name</span><span class="hljs-params">(first_name,last_name,middle,name = None)</span>:</span><br>	<span class="hljs-keyword">if</span> middle_name:<br>		<span class="hljs-keyword">return</span> first_name+middle_name+last_name<br>	<span class="hljs-keyword">else</span>:<br>		<span class="hljs-keyword">return</span> first_name+last_name<br>print(name(<span class="hljs-string">"Cheng"</span>,<span class="hljs-string">"Liu"</span>)) <span class="hljs-comment"># 结果是："ChengLiu"</span><br>print(name(<span class="hljs-string">"Cheng"</span>,<span class="hljs-string">"Liu"</span>,<span class="hljs-string">"JR"</span>))  <span class="hljs-comment"># 结果是："ChengLiuJR"</span><br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;⑤  可变长参数  *args</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span><span class="hljs-params">(x,y,z,*args)</span>:</span><br>	print(x,y,z)<br>	print(args)<br>foo(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>)  <span class="hljs-comment"># x=1,y=2,z=3，剩下打包成元组传给args</span><br>foo(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>])  <span class="hljs-comment"># x=1,y=2,z=3，剩下打包成元组传给args</span><br>foo(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,*[<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>])  <span class="hljs-comment"># x=1,y=2,z=3，剩下的打散后打包成元组给args</span><br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;⑥  可变长参数  **kwargs</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span><span class="hljs-params">(x,y,z,**kwargs)</span>:</span><br>	print(x,y,z)<br>	print(kwargs)<br>foo(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,a=<span class="hljs-number">4</span>,b=<span class="hljs-number">5</span>,c=<span class="hljs-number">6</span>)  <span class="hljs-comment"># x=1,y=2,z=3，剩下打包成字典传给args</span><br></code></pre></td></tr></table></figure>
-<p>3）函数体与变量作用域<br>&ensp;&ensp;① 局部变量：在函数内部定义的变量，仅在函数内部起作用<br>&ensp;&ensp;② 全局变量：在函数外部或使用global修饰的变量<br>4）返回值<br>&ensp;&ensp;① 单个返回值：就是用return返回<br>&ensp;&ensp;② 多个返回值：通过元组的形式</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span><span class="hljs-params">(x=<span class="hljs-number">1</span>)</span>:</span><br>	<span class="hljs-keyword">return</span> <span class="hljs-number">1</span>,x,x**<span class="hljs-number">2</span>,x**<span class="hljs-number">3</span><br>print(foo(<span class="hljs-number">3</span>))  <span class="hljs-comment"># (1,3,9,27)</span><br>a,b,c,d = foo(<span class="hljs-number">3</span>) <span class="hljs-comment"># 解包赋值</span><br></code></pre></td></tr></table></figure>
+        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>在面试时自我介绍的方式，常见的四个面试问题的回答</p>
+<h2 id="1-Self-introduction"><a href="#1-Self-introduction" class="headerlink" title="1. Self-introduction"></a>1. Self-introduction</h2><p>1）Good morning, I am xxx. I obtained my master in computer science in XX University.（亮出你出色的教育背景）一 10 秒<br>2）I have outstanding skills in programming. During my internship at XX company, I used my skills to increase the working efficiency of the company by 30%.（亮出你突出的实习表现）一 20 秒<br>3）The reason I applied for this position is that I’m really impressed by your rapid development as a startup and I totally agree with your human-oriented concept.（表示赞成企业文化和埋念）—— 2 秒<br>4）As a very self-motivated person, I’m sure I can be a great asset to your group.（表达想加入的意思）—— 10 秒</p>
+<h2 id="2-Questions-and-answers"><a href="#2-Questions-and-answers" class="headerlink" title="2. Questions and answers"></a>2. Questions and answers</h2><p>1）Do you have any working experience?<br>回答模板：行业+职业+年份<br>例子：Yes, <strong>I’ve been working in</strong> the online education sector <strong>as an</strong> operation manager <strong>for</strong> 5 years.</p>
+<p>2）What do you think about your personality?<br>回答模板：形容词+举例<br>例子：<strong>I am an</strong> open-minded <strong>person</strong> and I’m always energetic and enthusiastic. <strong>For example</strong>, ….</p>
+<p>3）Why did you choose to apply for this job?<br>回答模板：它+你+我<br>例子：<strong>The position is</strong> both challenging and interesting. <strong>It can make use of</strong> my professional experience. <strong>This job will offer me an opportunity to</strong> advancement.</p>
+<p>4）What would you like to achieve in life?<br>例子：<strong>My long-time career goal is</strong> to be the best technician in this field.</p>
 
-<h2 id="2、匿名函数"><a href="#2、匿名函数" class="headerlink" title="2、匿名函数"></a>2、匿名函数</h2><p>1）定义格式：lambda 变量:函数体<br>2）常用用法<br>&ensp;&ensp;① 列表排序sort()</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">ls = [(<span class="hljs-number">93</span>,<span class="hljs-number">88</span>),(<span class="hljs-number">79</span>,<span class="hljs-number">100</span>),(<span class="hljs-number">86</span>,<span class="hljs-number">71</span>),(<span class="hljs-number">85</span>,<span class="hljs-number">85</span>),(<span class="hljs-number">76</span>,<span class="hljs-number">94</span>)]<br>ls.sort(key = <span class="hljs-keyword">lambda</span> x:x[<span class="hljs-number">1</span>])  <span class="hljs-comment"># 根据元组第2个元素排序</span><br>ls.sort(key = <span class="hljs-keyword">lambda</span> x:x[<span class="hljs-number">0</span>]+x[<span class="hljs-number">1</span>])  <span class="hljs-comment"># 根据元组两个元素之和排序</span><br></code></pre></td></tr></table></figure>
-<p>&ensp;&ensp;② max()和min()</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">ls = [(<span class="hljs-number">93</span>,<span class="hljs-number">88</span>),(<span class="hljs-number">79</span>,<span class="hljs-number">100</span>),(<span class="hljs-number">86</span>,<span class="hljs-number">71</span>),(<span class="hljs-number">85</span>,<span class="hljs-number">85</span>),(<span class="hljs-number">76</span>,<span class="hljs-number">94</span>)]<br>n = max(ls,key = <span class="hljs-keyword">lambda</span> x:x[<span class="hljs-number">1</span>])<br>m = min(ls, key = <span class="hljs-keyword">lambda</span> x:x[<span class="hljs-number">1</span>])<br></code></pre></td></tr></table></figure>
     </div>
 </article>
 
@@ -401,19 +385,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/02/01/1%E3%80%81ZN-12/">Python基础⑨：标准库</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2020/02/01/1%E3%80%81ZN-11/">Python基础⑧：异常处理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/02/01/1%E3%80%81ZN-10/">Python基础⑦：文件读写、模块、包和库</a>
                 </span>
             </li>
             
@@ -425,19 +397,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/17/1%E3%80%81ZN-04/">Python基础②：基本数据类型</a>
+                    <a href="/2020/01/18/1%E3%80%81ZN-07/">Anaconda搭建人工智能与深度学习平台</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/01/16/1%E3%80%81ZN-03/">数学基础①：高数线代与概率论基础</a>
+                    <a href="/2020/01/16/1%E3%80%81ZN-02/">Python基础①：基础语法元素</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2020/01/14/3%E3%80%81ZT-01/">Markdown学习笔记</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/01/14/2%E3%80%81YY-01/">日常英语：How to refuse politely</a>
                 </span>
             </li>
             
@@ -453,6 +431,12 @@
                 </span>
             </li>
             
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/01/14/2%E3%80%81YY-05/">日常英语：Job interview</a>
+                </span>
+            </li>
+            
         </ul>
     </div>
 </aside>
@@ -464,17 +448,17 @@
 
                 
                 <li>
-                    <a href="/2020/02/01/1%E3%80%81ZN-08/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/01/14/2%E3%80%81YY-05/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/02/01/1%E3%80%81ZN-08/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/01/14/2%E3%80%81YY-05/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/02/01/1%E3%80%81ZN-08/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/01/14/2%E3%80%81YY-05/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -482,23 +466,23 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 14.926647916587768px;" class="tag-cloud-link">学习目录</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" style="font-size: 14.791818597633384px;" class="tag-cloud-link">学习目录</a>
     
-    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 8.699182345864905px;" class="tag-cloud-link">人工智能</a>
+    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 12.364438706192312px;" class="tag-cloud-link">人工智能</a>
     
-    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" style="font-size: 13.673162487742786px;" class="tag-cloud-link">数学基础</a>
+    <a href="/tags/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" style="font-size: 14.569546007918674px;" class="tag-cloud-link">数学基础</a>
     
-    <a href="/tags/Python%E5%9F%BA%E7%A1%80/" style="font-size: 17.618446472060377px;" class="tag-cloud-link">Python基础</a>
+    <a href="/tags/Python%E5%9F%BA%E7%A1%80/" style="font-size: 8.808868456632272px;" class="tag-cloud-link">Python基础</a>
     
-    <a href="/tags/%E6%97%A5%E5%B8%B8%E8%8B%B1%E8%AF%AD/" style="font-size: 16.638097963351797px;" class="tag-cloud-link">日常英语</a>
+    <a href="/tags/%E6%97%A5%E5%B8%B8%E8%8B%B1%E8%AF%AD/" style="font-size: 14.019424782220607px;" class="tag-cloud-link">日常英语</a>
     
-    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 14.687651741318813px;" class="tag-cloud-link">口语积累</a>
+    <a href="/tags/%E5%8F%A3%E8%AF%AD%E7%A7%AF%E7%B4%AF/" style="font-size: 11.7525793902334px;" class="tag-cloud-link">口语积累</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 18.958951914492076px;" class="tag-cloud-link">学习杂谈</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%9D%82%E8%B0%88/" style="font-size: 10.119453883242635px;" class="tag-cloud-link">学习杂谈</a>
     
-    <a href="/tags/Markdown/" style="font-size: 8.057827526242209px;" class="tag-cloud-link">Markdown</a>
+    <a href="/tags/Markdown/" style="font-size: 19.221058025101804px;" class="tag-cloud-link">Markdown</a>
     
-    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 9.558206012023836px;" class="tag-cloud-link">网站搭建</a>
+    <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 13.692192990209168px;" class="tag-cloud-link">网站搭建</a>
     
 </div>
                 
